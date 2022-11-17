@@ -1,1 +1,13 @@
-<p>login-comp works!</p>
+
+<div class="login">
+    <form class="form" [formGroup]="formgroup" (ngSubmit)="submit()">
+      
+          <div class="container">
+        <label>Username</label>
+        <input type="text" class="inputUsername" formControlName="username" placeholder="username" type="text"><br>
+        <label>Password</label>
+        <input class="inputPassword" formControlName="password" placeholder="password" type="password" ><br>
+        <button type="submit" [disabled]="this.formgroup.invalid">Submit</button><br>
+        </div>
+    </form>
+</div>

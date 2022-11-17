@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-4 display" *ngFor="let emp of empArray">
+        <div class="card" (click)="clickCard(emp)">
+            <div class="cardcontent" id="cardtitle">{{emp.empId}}</div>
+            <div class="cardcontent" id="cardname">{{emp.empName}}</div>
+            <div class="cardcontent" id="cardname">{{emp.phoneNumber}}</div>
+            <div *ngFor="let team of teamArray">
+            <div class="cardcontent" id="cardname" *ngIf="emp.teamNumber==team.teamNumber">{{team.teamName}}</div>
+            </div>
+        </div>
+
+    </div>
+</div>
