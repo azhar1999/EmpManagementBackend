@@ -1,1 +1,9 @@
-<p>employee-comp works!</p>
+<div class="card" *ngFor="let emp of getEmp">
+    <div class="cardcontent" id="empId">employee Id:{{emp.empId}}</div>
+    <div class="cardcontent">employee username:{{emp.empUsername}}</div>
+    <div class="cardcontent">employee name:{{emp.empName}}</div>
+    <div class="cardcontent">employee team number:{{emp.teamNumber}}</div>
+    <div class="cardcontent">employee team name:{{teamName}}</div>
+    <div class="cardcontent">employee phone number:{{emp.phoneNumber}}</div>
+    <div class="cardcontent">employee address:{{emp.addressInformation}}</div>
+</div>

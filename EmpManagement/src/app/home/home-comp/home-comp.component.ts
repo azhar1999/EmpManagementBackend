@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { forkJoin } from 'rxjs';
 import { IEmp, ITeam } from 'src/app/interface';
-import { LocalStorageServiceService } from 'src/app/local-storage-service.service';
+import { LocalStorageService } from 'src/app/service/local-storage.service';
 
 @Component({
   selector: 'app-home-comp',
@@ -12,7 +12,7 @@ import { LocalStorageServiceService } from 'src/app/local-storage-service.servic
 export class HomeCompComponent implements OnInit {
 
 
-  constructor(private router:Router,private getlocal:LocalStorageServiceService) { }
+  constructor(private router:Router,private getlocal:LocalStorageService) { }
 
    empArray: IEmp[]=[];
    teamArray:ITeam[]=[];

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { IEmp, ITeam } from './interface';
+import { IEmp, ITeam } from '../interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class LocalStorageServiceService {
+export class LocalStorageService {
 
   getArray:any[]=[]
   empArray:IEmp[]=[];
@@ -28,6 +28,7 @@ export class LocalStorageServiceService {
   }
 
   getTeamName():Observable<any>{
+    
     this.teamArray = JSON.parse(localStorage.getItem('teamList') || '{}')
     return of(this.teamArray)
 
