@@ -2,7 +2,7 @@ export interface IEmp{
     empId:number,
     empUsername:string,
     empName:string,
-    teamNumber:number,
+    teamName:string,
     phoneNumber:number,
     addressInformation:string,
     password:string

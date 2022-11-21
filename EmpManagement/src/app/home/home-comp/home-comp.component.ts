@@ -21,19 +21,20 @@ export class HomeCompComponent implements OnInit {
 
   ngOnInit(): void {
 
-    forkJoin([
-      this.getlocal.getAllEmployee(),
-      this.getlocal.getTeamName()
-    ]).subscribe(([employeeArray, teamarray]) => {
+  //   forkJoin([
+  //     this.getlocal.getAllEmployee(),
+  //     this.getlocal.getTeamName()
+  //   ]).subscribe(([employeeArray, teamarray]) => {
    
-    this.empArray=employeeArray
-    this.teamArray=teamarray})
+  //   this.empArray=employeeArray
+  //   this.teamArray=teamarray})
 
-  }
-  clickCard(emp:any){
+  // }
+  // clickCard(emp:any){
 
-    this.router.navigate(['/employeeList',emp.empUsername])
+  //   this.router.navigate(['/employeeList',emp.empUsername])
 
-  }
+  // }
 
+}
 }

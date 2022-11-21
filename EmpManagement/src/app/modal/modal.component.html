@@ -1,0 +1,24 @@
+
+    <div class="login">
+        <form class="form" [formGroup]="formgroup" (ngSubmit)="submit()">
+            <div class="container">
+            <label>Id</label>
+            <input type="number" class="inputUsername" formControlName="Id" placeholder="Id"><br>
+            <label>empName</label>
+            <input class="inputPassword" formControlName="empName" placeholder="employeename" type="text" ><br>
+            <label>empUsername</label>
+            <input class="inputUsername" formControlName="empUser" placeholder="employee Username" type="text" ><br>
+            <label>password</label>
+            <input class="inputPassword" formControlName="password" placeholder="password" type="text" ><br>
+            <label>addressInformation</label>
+            <input class="addressInformation" formControlName="addressInformation" placeholder="addressInformation" type="text" ><br>
+            <label>teamName</label>
+            <input class="teamName" formControlName="teamName" placeholder="teamName" type="text" ><br>
+            <label>phoneNumber</label>
+            <input class="phoneNumber" formControlName="phoneNumber" placeholder="phoneNumber" type="text" ><br>
+            <input type="submit" value="submit"><br>
+            </div>
+        </form>
+    </div>
+
+
